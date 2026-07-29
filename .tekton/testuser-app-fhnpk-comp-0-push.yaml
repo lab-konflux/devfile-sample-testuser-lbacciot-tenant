@@ -25,6 +25,8 @@ spec:
     value: quay.io/redhat-user-workloads-stage/lbacciot-tenant/testuser-app-fhnpk-comp-0:{{revision}}
   - name: dockerfile
     value: Dockerfile
+  - name: enable-cache-proxy
+    value: "true"
   pipelineSpec:
     description: |
       This pipeline is ideal for building container images from a Containerfile while reducing network traffic.
